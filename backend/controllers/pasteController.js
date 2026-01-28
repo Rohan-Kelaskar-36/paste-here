@@ -26,8 +26,9 @@ export const createPaste = async (req, res) => {
     });
 
     res.status(201).json({
-      url: `${process.env.BASE_URL}/p/${paste.shortId}`,
-    });
+  url: `${process.env.BASE_URL}/#/p/${paste.shortId}`,
+});
+
   } catch (error) {
     res.status(500).json({ error: "Failed to create paste" });
   }
