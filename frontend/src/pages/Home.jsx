@@ -35,7 +35,7 @@ export default function Home() {
   return (
     <div style={styles.page}>
       <div style={styles.card}>
-        <h1 style={styles.title}>📋 Pastebin Lite</h1>
+        <h1 style={styles.title}>📋 Paste Here</h1>
         <p style={styles.subtitle}>Create & share text instantly</p>
 
         <textarea
