@@ -1,16 +1,14 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import ViewPaste from "./pages/ViewPaste";
-import { Toaster } from "react-hot-toast";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
-export default function App() {
+function App() {
   return (
-    <BrowserRouter>
-      <Toaster position="top-right" />
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/p/:id" element={<ViewPaste />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
+
+export default App;
